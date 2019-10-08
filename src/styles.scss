@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+$bg-color-container: #f6f5f5;
+$body-bg: url(https://drive.google.com/uc?id=1-P15fJTorx-9chLprb_pRBaTOjWyCO8T);
+$body-font: Helvetica, sans-serif !important;
+$fontSize: 14px !important;
+
+.box-container {
+    background-color: $bg-color-container;
+}
+button:focus {
+    outline: none !important;
+}
+.material-icons {
+    margin-left: 10px;
+}
+p {
+    img {
+        border: 1px solid black !important;
+        border-radius: 10px;
+    }
+}
+
+body {
+    background-image: $body-bg;
+    font-family: $body-font;
+    font-size: $fontSize;
+    padding-top: 4.5rem;
+    padding-bottom: 2.5rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.box-container {
+    padding: 20px 25px 20px 25px !important;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.imgContainer img {
+    opacity: .3;
+    width: 250px;
+}
+

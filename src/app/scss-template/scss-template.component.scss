@@ -1,0 +1,31 @@
+$navbarcolor: #0469a1 !important;
+$textcolor: darkblue !important;
+$fontsize: 14px;
+$primary1: #ddd!important;
+$primary2: #4d4e4f !important;
+$myFont: fantasy !important;
+// .w3-theme-d2 {
+//     background-color: $navbarcolor;
+// }
+// .w3-white {
+//     color: $textcolor;
+//     background-color: $primary1;
+// }
+// .w3-theme-l1 {
+//     background-color: $primary2;
+// }
+.w3-top {
+    position: static;
+}
+
+.w3-theme-l5 {
+    background-color: transparent !important;
+}
+
+.w3-container {
+    padding: 1.2em 16px;
+}
+
+.w3-bar {
+    border-radius: 10px 10px 0px 0px;
+}
