@@ -5,11 +5,33 @@ $primary1: #fff!important;
 $primary2: #4d4e4f !important;
 $primary3: #258fc1 !important;
 $myFont: fantasy !important;
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
 @mixin important-text {
-    color: red;
+    color: #17a2b8;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid blue;
+}
+
+.button-report {
+    @extend .button-basic;
+    background-color: #e86060;
+}
+
+.button-submit {
+    @extend .button-basic;
+    background-color: #4c974c;
+    color: white;
+}
+
+.myArticle {
+    @include bordered(blue, 4px);
+}
+
+.myNotes {
+    @include bordered(red, 2px);
 }
 
 .danger {
@@ -22,6 +44,16 @@ $myFont: fantasy !important;
         color: #fff!important;
         background-color: rgb(39, 146, 132)!important;
     }
+}
+
+.button-basic {
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0px 5px;
 }
 
 .w3-theme-d2 {
