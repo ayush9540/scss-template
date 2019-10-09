@@ -14,10 +14,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 d-flex justify-content-between">
-                    <button type="button" class="btn btn-danger" (click)="changeMode()">
-                        Toggle ({{ encryptMode ? "Encryption" : "Decryption" }})
-                    </button>
-                    <button type="button" class="btn btn-info" (click)="convertText()">{{ encryptMode ? "Encrypt" : "Decrypt" }}</button>
+                    <button type="button" mat-raised-button id="toggler" (click)="changeMode()">Toggle ({{ encryptMode ? "Encryption" : "Decryption" }})</button>
+                    <button type="button" mat-raised-button id="togglebtn" [ngClass]="encryptMode ? 'btn-danger' : 'btn-success'" (click)="convertText()">{{ encryptMode ? "Encrypt" : "Decrypt" }}</button>
                 </div>
             </div>
         </div>

@@ -10,7 +10,8 @@ import { EncryptionComponent } from './encryption/encryption.component';
 import { DecryptionComponent } from './decryption/decryption.component';
 import { OverviewComponent } from './overview/overview.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ScssTemplateComponent } from './scss-template/scss-template.component'
+import { ScssTemplateComponent } from './scss-template/scss-template.component';
+import { ScssOverviewComponent } from './scss-overview/scss-overview.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ScssTemplateComponent } from './scss-template/scss-template.component'
     EncryptionComponent,
     DecryptionComponent,
     OverviewComponent,
-    ScssTemplateComponent
+    ScssTemplateComponent,
+    ScssOverviewComponent
   ],
   imports: [
     BrowserModule,

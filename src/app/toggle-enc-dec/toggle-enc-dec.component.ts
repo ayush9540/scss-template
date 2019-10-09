@@ -12,6 +12,7 @@ export class ToggleEncDecComponent implements OnInit {
   textToConvert: string;
   password: string;
   conversionOutput: string;
+  status: boolean = true;
 
   constructor() {
     this.encryptMode = true;
@@ -35,6 +36,7 @@ export class ToggleEncDecComponent implements OnInit {
         this.conversionOutput = CryptoJS.AES.decrypt(this.textToConvert.trim(), this.password.trim()).toString(CryptoJS.enc.Utf8);
       }
     }
+    this.encryptMode = this.encryptMode ? false : true;
   }
 
   ngOnInit() {
