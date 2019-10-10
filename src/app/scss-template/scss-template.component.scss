@@ -1,6 +1,6 @@
 $navbarcolor: #0469a1 !important;
 $textcolor: #000 !important;
-$fontsize: 14px;
+$fontsize: 18px !important;
 $primary1: #fff!important;
 $primary2: #4d4e4f !important;
 $primary3: #258fc1 !important;
@@ -11,7 +11,7 @@ $myFont: fantasy !important;
 
 @mixin important-text {
     color: #17a2b8;
-    font-size: 18px;
+    font-size: $fontsize;
     font-weight: bold;
 }
 
