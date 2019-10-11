@@ -69,20 +69,41 @@
                 <li>Files have the .sass extension.</li>
             </ul>
             <hr>
-            <h3>Use of SCSS ?</h3>
+
+
             <div class="box-container inner">
+                <h3>Variables</h3>
+                <p>
+                    Through variables you assign a value to a name that begins with $, and then you can refer to that name instead of the value itself. But despite their simplicity, they're one of the most useful tools Sass brings to the table. Variables make it possible
+                    to reduce repetition, do complex math, configure libraries, and much more.
+                </p>
                 <img src="https://i.ibb.co/XxS5cxL/variables-Scss.png" alt="variables-Scss">
                 <img src="https://i.ibb.co/8zDT5FF/variables-CSS.png" alt="variables-CSS">
             </div>
             <div class="box-container inner">
+                <h3>Inheritance</h3>
+                <p>
+                    This is one of the most useful features of Sass. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings
+                    and successes using another feature which goes hand in hand with extend, placeholder classes. A placeholder class is a special type of class that only prints when it is extended, and can help keep your compiled CSS neat and clean.
+                </p>
                 <img src="https://i.ibb.co/LhpZ18x/inheritance-SCSS.png" alt="inheritance-SCSS">
                 <img src="https://i.ibb.co/d2D1kk1/inheritance-CSS.png" alt="inheritance-CSS">
             </div>
             <div class="box-container inner">
+                <h3>Modularization</h3>
+                <P>
+                    It helps to write all your Sass in a single file. You can split it up however you want with the @use rule. This rule loads another Sass file as a module, which means you can refer to its variables, mixins, and functions in your Sass file with a namespace
+                    based on the filename. Using a file will also include the CSS it generates in your compiled output!
+                </P>
                 <img src="https://i.ibb.co/Mk506Gk/modularization-SCSS.png" alt="modularization-SCSS">
                 <img src="https://i.ibb.co/mHzDK7F/modularizaiton-CSS.png" alt="modularizaiton-CSS">
             </div>
             <div class="box-container inner">
+                <h3>Nesting</h3>
+                <p>
+                    When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn't. Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested
+                    rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
+                </p>
                 <img src="https://i.ibb.co/KGV5g2d/nesting-Scss.png" alt="nesting-Scss">
                 <img src="https://i.ibb.co/ZTkHjSV/nesting-CSS.png" alt="nesting-CSS">
             </div>
